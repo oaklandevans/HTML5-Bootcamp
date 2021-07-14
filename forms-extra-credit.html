@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms-Extra-Credit</title>
+        <style>
+            fieldset {
+                min-width: 0; width: 700px;
+                margin: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Account Registration</h1>
+        <form>
+            <fieldset id="typeOfUser">
+                <legend>Type of User</legend>
+                    <label for="typeOfUser">What type of user are you?</label>
+                    <input type="radio" name="action" /><label for="track">Customer</label>
+                    <input type="radio" name="action" /><label for="event">Employee/Contractor</label>
+                    <input type="radio" name="action" /><label for="message">Federal Employee/Contractor</label>
+            </fieldset>
+            
+            <fieldset >
+                <legend>Email</legend>
+                        <label for="email">Personal Email Address</label>
+                        <input type="email" id="personalEmail">
+                        <label for="email">Business Email Address</label>
+                        <input type="email" id="businessEmail">
+            </fieldset>
+
+            <fieldset >
+                <legend>Password</legend>
+                        <label for="password">Password</label>
+                        <input type="password">
+            </fieldset>
+
+            <fieldset >
+                <legend>Use Case</legend>
+                <label for="case">I'm interested in: </label>
+
+                <select name="case" id="case">
+                <option value="personal">Personal</option>
+                <option value="business">Business</option>
+                
+                </select>
+            </fieldset>
+
+            <fieldset >
+                <legend>Age Verification</legend>
+                        <label for="ageVerification">I am over 18 years of age</label>
+                        <input type="checkbox">
+            </fieldset>
+        </form>
+    </body>
+</html>
