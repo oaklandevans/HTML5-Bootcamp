@@ -20,7 +20,8 @@
 				<label for="unitsMetric">
 					cm/kg:
 				</label>
-				<input type="radio" id="unitsMetric" name="units" value="metric" required>
+				<input type="radio" id="unitsMetric" name="units" value="metric" required oninvalid="this.setCustomValidity('Please choose a unit of measurement')"
+                oninput="this.setCustomValidity('')">
 				<label for="unitsEn">
 					in/lb:
 				</label>
@@ -29,14 +30,17 @@
 			<fieldset>
 				<legend>Height/Weight</legend>
 				<label for="h">Height:</label>
-				<input type="text" id="h" name="h" size="6" class="blockElem" required>
+				<input type="number" id="h" name="h" size="6" class="blockElem" required oninvalid="this.setCustomValidity('Please enter a Height')"
+                oninput="this.setCustomValidity('')">
 				<label for="w">Weight:</label>
-				<input type="text" id="w" name="w" size="6" class="blockElem" required>
+				<input type="number" id="w" name="w" size="6" class="blockElem" required oninvalid="this.setCustomValidity('Please enter a Weight')"
+                oninput="this.setCustomValidity('')">
 			</fieldset>
 			<fieldset>
                 <legend>Contact Info:</legend>
 				<label for="email" class="blockElem">Email: </label>
-				<input type="text" id="email" size="10" required>
+				<input type="text" id="email" size="10" required oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                oninput="this.setCustomValidity('')">
 			</fieldset>
 			<input type="submit" id="calcBMI_btn" name="calcBMI_btn" value="Calculate BMI">
 
